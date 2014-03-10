@@ -20,7 +20,7 @@ Untuk instalasi vagrant di windows pertama kita harus download [VirtualBox](http
 Apabila semua berjalan lancar (setelah restart dan segala macamnya), kita bisa test dengan [windows command prompt](http://lmgtfy.com/?q=windows+command+prompt) dan jalankan
 
 ```
-    C:\Users\wongganteng> vagrant --help
+    C:/Users/wongganteng> vagrant --help
 ```
 
 Selamat! anda sudah berhasil menginstall vagrant! :+1:
@@ -31,11 +31,25 @@ Selamat! anda sudah berhasil menginstall vagrant! :+1:
 Untuk membuat _virtual machine_ pertama anda, yang anda perlukan cuma ketikkan perintah dibawah ini:
 
 ```
-    C:\Users\wongganteng> vagrant init development http://files.vagrantup.com/precise32.box
+    C:/Users/wongganteng> vagrant init development http://files.vagrantup.com/precise32.box
 ```
 
-`development` merupakan nama dari _machine_ kita, dan kita akan install `precise pangolin` dari vagrant cloud.
+`development` merupakan nama dari _box_ kita, dan kita akan install `precise pangolin` dari vagrant cloud.
 
 > Anda mungkin mengalami error ketika pertama kali menjalankan perintah ini, kenapa?! pake modem usb sih downloadnya. :stuck_out_tongue:
 > Just kidding, apabila anda mengalami error, download manual file precise32.box dari browser anda, dan simpan di tempat yang aman.
 > Dan kembali jalankan perintah `vagrant init development tempat\yang\aman\precise32.box`
+
+Setelah berhasil membuat _box_ pertama anda, sekarang saat nya untuk bermain dengan _box_ yang sudah kita buat, gunakan [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) untuk akses ssh ke dalam server anda, dengan konfigurasi sebagai berikut:
+
+```
+    Host: 127.0.0.1
+    Port: 2222
+    Username: vagrant
+    Password: vagrant
+    PrivateKey: [Lokasi Private Key Anda] (kalo di saya: C:/Users/wongganteng/.vagrant.d/insecure_private_key
+```
+
+> Apabila anda tidak tahu cara menggunakan PuTTY anda bisa lihat tutorial nya [di sini](http://lmgtfy.com/?q=how+to+use+putty).
+
+Nah saat ini anda sudah masuk kedalam _virtual machine_ anda, gimana?! keren kan?! :grin:
