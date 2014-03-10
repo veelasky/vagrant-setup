@@ -4,11 +4,11 @@ Vagrant adalah _virtual machine_ portable, yang bisa digunakan untuk proses _dev
 
 Dengan vagrant kita bisa develop aplikasi kita dengan meniru secara tidak langsung _production server_, yang terkadang berbeda dengan _development environment_ yang kita gunakan ketika tahap _development_.
 
-Apalagi dengan maraknya penggunaan `node.js` package manager, dan ruby `gem`.
+Apalagi dengan maraknya penggunaan node.js package manager `npm`, dan ruby `gem`.
 
 ### Catatan
 
-Tutorial ini dimaksudkan kepada pengguna windows yang akan menginstall linux sebagai _guest OS_, dalam hal ini Ubuntu 12.04 `precise pangolin`.
+Tutorial ini dimaksudkan kepada pengguna windows yang akan menginstall linux sebagai _guest OS_, dalam contoh ini kita memakai Ubuntu 12.04 `precise pangolin`.
 
 
 ### Install
@@ -53,3 +53,25 @@ Setelah berhasil membuat _box_ pertama anda, sekarang saat nya untuk bermain den
 > Apabila anda tidak tahu cara menggunakan PuTTY anda bisa lihat tutorial nya [di sini](http://lmgtfy.com/?q=how+to+use+putty).
 
 Nah saat ini anda sudah masuk kedalam _virtual machine_ anda, gimana?! keren kan?! :grin:
+
+Setiap kali anda melakukan `vagrant init` anda akan membuat satu `VagrantFile` di tempat anda menjalankan perintah (dalam contoh ini: `C:/users/wongganteng/`), `VagrantFile` merupakan konfigurasi dari _box_ yang baru saja anda buat.
+
+Di dalam, `VagrantFile` ada konfigurasi untuk mount disk anda ke dalam development environtment. Buka `VagrantFile` anda dan edit baris ini:
+
+```
+    config.vm.synced_folder "../data", "/codebase"
+```
+
+`../data` merupakan path windows anda yang akan anda baca di _development box_ anda, sedangkan `/codebase` merupakan mount alias yang akan kita baca di _development box_.
+
+Setelah merubah file tersebut gunakan perintah `vagrant reload` untuk restart vagrant machine dan load new configuration. Setelah menyala kembali vagrant machine anda, gunakan PuTTY untuk kembali login ke _development box_ anda.
+
+Ketikkan perintah:
+```
+    ls codebase
+```
+Dan anda akan melihat  file anda sudah terbaca dalam _development box_ anda!! HOW COOL IS THAT?!
+
+### Lanjutan
+
+-- To Be Continued --
