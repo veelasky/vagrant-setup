@@ -1,0 +1,3 @@
+[submodule "Chef/mysql"]
+	path = Chef/mysql
+	url = https://github.com/opscode-cookbooks/mysql.git
