@@ -18,7 +18,7 @@ Untuk memudahkan pemahaman dalam membaca tutorial ini, berikut adalah skenario n
 
 ## Instalasi
 
-Sebelum memulai instalasi, anda akan membutuhkan beberapa software yang harus anda donlot
+Sebelum memulai instalasi, anda akan membutuhkan beberapa software yang harus anda download
 
 > WARNING: Bandwidth Killer!! Download dari kantor kalo bisa. :grin:
 
@@ -35,4 +35,13 @@ Untuk memudahkan pengorganisasian files pindahkan file `opscode_ubuntu-12.04_che
 
 Setelah proses instalasi selesai kita bisa mulai melakukan initial setup untuk vagrant machine.
 
-Karena kita sedang develop di `D:/codebase/aplikasi` kita akan buat `VagrantFile` pertama kita darisana.
+Karena kita sedang develop di `D:/codebase/aplikasi` kita akan buat `VagrantFile` pertama kita dari sana. Masuk ke dalam windows command prompt, dan pindahkan lokasi anda ke `D:\codebase\aplikasi\`.
+
+Setelah anda berada di `D:/codebase/aplikasi` jalankan perintah sebagai berikut
+
+```
+    D:\codebase\aplikasi> vagrant init aplikasi ../../vagrant/boxes/opscode_ubuntu-12.04_chef-11.2.0.box
+```
+
+> `aplikasi` adalah nama dari virtual machine anda,  sedangkan `../../vagrant/boxes/opscode_ubuntu-12.04_chef-11.2.0.box` adalah path dimana anda menyimpan file Ubuntu 12.04 yang anda download ketika pertama kali instalasi.
+
