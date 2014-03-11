@@ -1,0 +1,57 @@
+[submodule "chef/cookbooks/apache2"]
+	path = chef/cookbooks/apache2
+	url = https://github.com/opscode-cookbooks/apache2.git
+[submodule "chef/cookbooks/apt"]
+	path = chef/cookbooks/apt
+	url = https://github.com/opscode-cookbooks/apt.git
+[submodule "chef/cookbooks/build-essential"]
+	path = chef/cookbooks/build-essential
+	url = https://github.com/opscode-cookbooks/build-essential.git
+[submodule "chef/cookbooks/database"]
+	path = chef/cookbooks/database
+	url = https://github.com/opscode-cookbooks/database.git
+[submodule "chef/cookbooks/git"]
+	path = chef/cookbooks/git
+	url = https://github.com/opscode-cookbooks/git.git
+[submodule "chef/cookbooks/java"]
+	path = chef/cookbooks/java
+	url = https://github.com/socrata-cookbooks/java.git
+[submodule "chef/cookbooks/memcached"]
+	path = chef/cookbooks/memcached
+	url = https://github.com/opscode-cookbooks/memcached.git
+[submodule "chef/cookbooks/mysql"]
+	path = chef/cookbooks/mysql
+	url = https://github.com/opscode-cookbooks/mysql.git
+[submodule "chef/cookbooks/composer"]
+	path = chef/cookbooks/composer
+	url = https://github.com/zircote/chef-composer.git
+[submodule "chef/cookbooks/php-extra"]
+	path = chef/cookbooks/php-extra
+	url = https://github.com/inviqa/chef-php-extra.git
+[submodule "chef/cookbooks/curl"]
+	path = chef/cookbooks/curl
+	url = https://github.com/phlipper/chef-curl.git
+[submodule "chef/cookbooks/nodejs"]
+	path = chef/cookbooks/nodejs
+	url = https://github.com/mdxp/nodejs-cookbook.git
+[submodule "chef/cookbooks/openssl"]
+	path = chef/cookbooks/openssl
+	url = https://github.com/opscode-cookbooks/openssl.git
+[submodule "chef/cookbooks/php"]
+	path = chef/cookbooks/php
+	url = https://github.com/opscode-cookbooks/php.git
+[submodule "chef/cookbooks/phpunit"]
+	path = chef/cookbooks/phpunit
+	url = https://github.com/escapestudios-cookbooks/phpunit.git
+[submodule "chef/cookbooks/python"]
+	path = chef/cookbooks/python
+	url = https://github.com/poise/python.git
+[submodule "chef/cookbooks/supervisor"]
+	path = chef/cookbooks/supervisor
+	url = https://github.com/poise/supervisor.git
+[submodule "chef/cookbooks/users"]
+	path = chef/cookbooks/users
+	url = https://github.com/sethvargo-cookbooks/users.git
+[submodule "chef/cookbooks/vim"]
+	path = chef/cookbooks/vim
+	url = https://github.com/opscode-cookbooks/vim.git
