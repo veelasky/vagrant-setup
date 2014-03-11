@@ -1,10 +1,10 @@
 ### Opo Kui Vagrant?
 
+
 Vagrant adalah _virtual machine_ portable, yang bisa digunakan untuk proses _development_ sebuah aplikasi (dalam hal ini web application). 
 
-Dengan vagrant kita bisa develop aplikasi kita dengan meniru secara tidak langsung _production server_, yang terkadang berbeda dengan _development environment_ yang kita gunakan ketika tahap _development_.
-
-Apalagi dengan maraknya penggunaan node.js package manager `npm`, dan ruby `gem`.
+Dengan vagrant kita bisa develop aplikasi kita dengan meniru secara tidak langsung _production server_, 
+yang terkadang berbeda dengan _development environment_ yang kita gunakan ketika tahap _development_.
 
 ### Catatan
 
