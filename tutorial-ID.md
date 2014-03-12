@@ -25,11 +25,11 @@ Sebelum memulai instalasi, anda akan membutuhkan beberapa software yang harus an
 - [Vagrant](http://www.vagrantup.com/). duh?!
 - [VirtualBox](https://www.virtualbox.org/). VM yang digunakan oleh vagrant untuk virtualisasi.
 - [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html). digunakan untuk akses ssh kedalam virtual machine anda.
-- [Ubuntu 12.04](https://opscode-vm.s3.amazonaws.com/vagrant/opscode_ubuntu-12.04_chef-11.2.0.box). OS yang kita gunakan untuk virtual machine kita, sebenarnya ada banyak sekali pilihan untuk OS yang bisa kita gunakan, tapi untuk tutorial ini kita gunakan Ubuntu 12.04.
+- [Ubuntu 12.04](http://files.vagrantup.com/precise32.box). OS yang kita gunakan untuk virtual machine kita, sebenarnya ada banyak sekali pilihan untuk OS yang bisa kita gunakan, tapi untuk tutorial ini kita gunakan Ubuntu 12.04.
 
 Silahkan memulai instalasi vagrant dan virtual box di local komputer anda.
 
-Untuk memudahkan pengorganisasian files pindahkan file `opscode_ubuntu-12.04_chef-11.2.0.box` ke directory `D:\vagrant\boxes\` (kalo belum ada silahkan dibuat).
+Untuk memudahkan pengorganisasian files pindahkan file `precise32.box` ke directory `D:\vagrant\boxes\` (kalo belum ada silahkan dibuat).
 
 ## Your Fist Box!
 
@@ -40,10 +40,10 @@ Karena kita sedang develop di `D:/codebase/aplikasi` kita akan buat `VagrantFile
 Setelah anda berada di `D:/codebase/aplikasi` jalankan perintah sebagai berikut
 
 ```
-    D:\codebase\aplikasi> vagrant init aplikasi ..\..\vagrant\boxes\opscode_ubuntu-12.04_chef-11.2.0.box
+    D:\codebase\aplikasi> vagrant init aplikasi ..\..\vagrant\boxes\precise32.box
 ```
 
-> `aplikasi` adalah nama dari virtual machine anda,  sedangkan `../../vagrant/boxes/opscode_ubuntu-12.04_chef-11.2.0.box` adalah path dimana anda menyimpan file Ubuntu 12.04 yang anda download ketika pertama kali instalasi.
+> `aplikasi` adalah nama dari virtual machine anda,  sedangkan `../../vagrant/boxes/precise32.box` adalah path dimana anda menyimpan file Ubuntu 12.04 yang anda download ketika pertama kali instalasi.
 
 Setelah ada konfirmasi bahwa `VagrantFile` telah dibuat, gunakan perintah `vagrant up` untuk boot virtual machine anda.
 
@@ -102,4 +102,5 @@ Salah satu fitur vagrant yang sangat keren adalah provisioning, dalam bahasa awa
 - `puppet`: automatisasi menggunakan [Puppet](http://puppetlabs.com/puppet/puppet-enterprise)
 - `chef`: automatisasi menggunakan [Chef](http://www.getchef.com/chef/)
 
-Untuk tutorial ini, kita akan menggunakan Chef sebagai sistem provisioning kita.
+Untuk tutorial ini, kita akan menggunakan Chef sebagai sistem provisioning kita. 
+
